@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los mejores destinos de aventura en Perú: trekking, surf, parapente y más">
+    <meta name="keywords" content="turismo aventura Perú, trekking Perú, deportes extremos, Machu Picchu, Cusco">
+    <meta name="author" content="Aventura Perú">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Aventura Perú - Turismo de Aventura">
+    <meta property="og:description" content="Los mejores destinos de aventura en Perú">
+    <meta property="og:type" content="website">
+    
+    <title>Aventura Perú - Inicio | Turismo de Aventura</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E⛰️%3C/text%3E%3C/svg%3E">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="main-header">
+        <div class="container">
+            <!-- Logo SVG personalizado -->
+            <div class="logo">
+                <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <!-- Montaña principal -->
+                    <path d="M 20 80 L 50 20 L 80 80 Z" fill="#d91023" class="mountain-main"/>
+                    <!-- Montaña secundaria -->
+                    <path d="M 50 80 L 70 40 L 90 80 Z" fill="#a50d1c" class="mountain-secondary"/>
+                    <!-- Nieve en pico -->
+                    <path d="M 50 20 L 45 35 L 55 35 Z" fill="white" class="snow"/>
+                    <!-- Sol -->
+                    <circle cx="15" cy="25" r="8" fill="#ffd700" class="sun"/>
+                    <!-- Rayos del sol -->
+                    <line x1="15" y1="15" x2="15" y2="10" stroke="#ffd700" stroke-width="2" class="sun-ray"/>
+                    <line x1="22" y1="18" x2="25" y2="15" stroke="#ffd700" stroke-width="2" class="sun-ray"/>
+                </svg>
+                <h1>Aventura Perú</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con imagen adaptativa -->
+    <section class="hero-section">
+        <picture>
+            <!-- Imagen para desktop -->
+            <img 
+                src="img/1. MACHU PICCHU.jpg" 
+                alt="Vista panorámica de Machu Picchu con montañas y nubes"
+                class="hero-image">
+        </picture>
+        
+        <div class="hero-content">
+            <h2 class="animated-title">Vive la Aventura de tu Vida</h2>
+            <p class="hero-subtitle">Descubre los destinos más emocionantes del Perú</p>
+            <a href="destinos.html" class="btn-hero">Explorar Destinos</a>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Sección Bienvenida -->
+            <section class="welcome-section">
+                <h2>Bienvenidos a Aventura Perú</h2>
+                <p class="intro-text">
+                    El <strong>Perú</strong> es uno de los mejores destinos del mundo para el <em>turismo de aventura</em>. 
+                    Desde las alturas de los Andes hasta las profundidades de la selva amazónica, nuestro país ofrece 
+                    experiencias únicas que desafiarán tus límites y te conectarán con la naturaleza.
+                </p>
+            </section>
+
+            <!-- Image Map Interactivo - Mapa de Perú con regiones -->
+            <section class="interactive-map-section">
+                <h2>Explora las Regiones del Perú</h2>
+                <p>Haz clic en cada región para descubrir sus aventuras</p>
+                
+                <figure class="map-container">
+                    <img 
+                        src="img/2. IMAGEN INTERACTIVA.png" 
+                        alt="Mapa interactivo del Perú dividido en tres regiones"
+                        usemap="#mapa-peru"
+                        class="interactive-image">
+                    
+                    <map name="mapa-peru">
+                        <!-- Área superior - Costa -->
+                        <area 
+                            shape="rect" 
+                            coords="0,0,800,400" 
+                            href="#costa" 
+                            alt="Costa peruana - Playas y surf"
+                            title="Costa: Playas y deportes acuáticos">
+                        
+                        <!-- Área central - Sierra -->
+                        <area 
+                            shape="rect" 
+                            coords="0,400,800,600" 
+                            href="#sierra" 
+                            alt="Sierra peruana - Montañas y trekking"
+                            title="Sierra: Trekking y montañismo">
+                        
+                        <!-- Área inferior - Selva -->
+                        <area 
+                            shape="rect" 
+                            coords="0,600,800,800" 
+                            href="#selva" 
+                            alt="Selva amazónica - Expediciones"
+                            title="Selva: Expediciones amazónicas">
+                    </map>
+                    
+                    <figcaption>
+                        <strong>Mapa Interactivo:</strong> Haz clic en las diferentes áreas para explorar 
+                        las aventuras de cada región del Perú (Costa, Sierra y Selva)
+                    </figcaption>
+                </figure>
+            </section>
+
+            <!-- Actividades Destacadas -->
+            <section class="activities-section">
+                <h2>Actividades de Aventura</h2>
+                
+                <div class="activities-grid">
+                    <!-- Actividad 1 - Trekking -->
+                    <article class="activity-card" id="sierra">
+                        <figure>
+                            <picture>
+                                <source 
+                                    media="(max-width: 768px)" 
+                                    srcset="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop">
+                                <img 
+                                    src="img/3. CAMINO DEL INCA.jpg" 
+                                    alt="Grupo de excursionistas haciendo trekking en montañas andinas"
+                                    class="activity-image">
+                            </picture>
+                            <figcaption>
+                                <h3>Trekking en los Andes</h3>
+                                <p>Camino Inca, Salkantay y más</p>
+                            </figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <p>Recorre los senderos más espectaculares del mundo, incluido el famoso Camino Inca hacia Machu Picchu.</p>
+                            <ul>
+                                <li>Duración: 2-7 días</li>
+                                <li>Dificultad: Moderada a Alta</li>
+                                <li>Mejor época: Abril - Octubre</li>
+                            </ul>
+                            <a href="destinos.html#trekking" class="btn-card">Más información</a>
+                        </div>
+                    </article>
+
+                    <!-- Actividad 2 - Surf -->
+                    <article class="activity-card" id="costa">
+                        <figure>
+                            <picture>
+                                <source 
+                                    media="(max-width: 768px)" 
+                                    srcset="https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=400&h=300&fit=crop">
+                                <img 
+                                    src="img/4. SURF EN CHICAMA.jpg" 
+                                    alt="Surfista cabalgando una ola perfecta en la costa peruana"
+                                    class="activity-image">
+                            </picture>
+                            <figcaption>
+                                <h3>Surf en la Costa</h3>
+                                <p>Chicama, Máncora y Cabo Blanco</p>
+                            </figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <p>Desafía las mejores olas del Pacífico en Chicama, la ola izquierda más larga del mundo.</p>
+                            <ul>
+                                <li>Olas todo el año</li>
+                                <li>Nivel: Principiante a Experto</li>
+                                <li>Temperatura: 18-24°C</li>
+                            </ul>
+                            <a href="destinos.html#surf" class="btn-card">Más información</a>
+                        </div>
+                    </article>
+
+                    <!-- Actividad 3 - Rafting -->
+                    <article class="activity-card">
+                        <figure>
+                            <picture>
+                                <source 
+                                    media="(max-width: 768px)" 
+                                    srcset="https://images.unsplash.com/photo-1533073526757-2c8ca1df9f1c?w=400&h=300&fit=crop">
+                                <img 
+                                    src="img/5. RAFTING EXTREMO.jpg" 
+                                    alt="Bote de rafting navegando rápidos intensos en río de montaña"
+                                    class="activity-image">
+                            </picture>
+                            <figcaption>
+                                <h3>Rafting Extremo</h3>
+                                <p>Río Urubamba y Río Apurímac</p>
+                            </figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <p>Navega los rápidos más emocionantes de los ríos andinos con adrenalina pura.</p>
+                            <ul>
+                                <li>Clase II a V</li>
+                                <li>Edad mínima: 12 años</li>
+                                <li>Equipo incluido</li>
+                            </ul>
+                            <a href="destinos.html#rafting" class="btn-card">Más información</a>
+                        </div>
+                    </article>
+
+                    <!-- Actividad 4 - Selva -->
+                    <article class="activity-card" id="selva">
+                        <figure>
+                            <picture>
+                                <source 
+                                    media="(max-width: 768px)" 
+                                    srcset="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=400&h=300&fit=crop">
+                                <img 
+                                    src="img/6. EXPEDICION AMAZÓNICA.jpg" 
+                                    alt="Río serpenteante en la selva amazónica con vegetación densa"
+                                    class="activity-image">
+                            </picture>
+                            <figcaption>
+                                <h3>Expediciones Amazónicas</h3>
+                                <p>Iquitos, Manu y Tambopata</p>
+                            </figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <p>Adéntrate en la selva más biodiversa del planeta y descubre especies únicas.</p>
+                            <ul>
+                                <li>Tours: 3-7 días</li>
+                                <li>Lodges en plena selva</li>
+                                <li>Guías especializados</li>
+                            </ul>
+                            <a href="destinos.html#selva" class="btn-card">Más información</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Estadísticas -->
+            <section class="stats-section">
+                <h2>Por qué Elegirnos</h2>
+                <div class="stats-grid">
+                    <div class="stat-card animated-card">
+                        <div class="stat-icon">🏔️</div>
+                        <h3>50+</h3>
+                        <p>Rutas de Trekking</p>
+                    </div>
+                    <div class="stat-card animated-card">
+                        <div class="stat-icon">⭐</div>
+                        <h3>15 años</h3>
+                        <p>De Experiencia</p>
+                    </div>
+                    <div class="stat-card animated-card">
+                        <div class="stat-icon">👥</div>
+                        <h3>10,000+</h3>
+                        <p>Aventureros Felices</p>
+                    </div>
+                    <div class="stat-card animated-card">
+                        <div class="stat-icon">🏆</div>
+                        <h3>100%</h3>
+                        <p>Seguridad Garantizada</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Somos una agencia especializada en turismo de aventura en Perú, con más de 15 años de experiencia.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <p>info@aventuraperu.com</p>
+                    <p>+51 999 999 999</p>
+                    <p>Huancavelica, Perú</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aventura Perú. Todos los derechos reservados</p>
+                <p>PA 2 - MATAMOROS PINEDA MARTIN ABELARDO</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
