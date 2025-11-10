@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora los mejores destinos de aventura en Perú con información detallada y precios">
+    <meta name="keywords" content="destinos Perú, Cusco, Huaraz, Máncora, tours aventura">
+    <meta name="author" content="Aventura Perú">
+    <meta name="robots" content="index, follow">
+    
+    <title>Destinos - Aventura Perú | Tours de Aventura</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E⛰️%3C/text%3E%3C/svg%3E">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <path d="M 20 80 L 50 20 L 80 80 Z" fill="#d91023" class="mountain-main"/>
+                    <path d="M 50 80 L 70 40 L 90 80 Z" fill="#a50d1c" class="mountain-secondary"/>
+                    <path d="M 50 20 L 45 35 L 55 35 Z" fill="white" class="snow"/>
+                    <circle cx="15" cy="25" r="8" fill="#ffd700" class="sun"/>
+                    <line x1="15" y1="15" x2="15" y2="10" stroke="#ffd700" stroke-width="2" class="sun-ray"/>
+                    <line x1="22" y1="18" x2="25" y2="15" stroke="#ffd700" stroke-width="2" class="sun-ray"/>
+                </svg>
+                <h1>Aventura Perú</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html" class="active">Destinos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner de página -->
+    <section class="page-banner">
+        <h2>Nuestros Destinos</h2>
+        <p>Descubre las mejores aventuras en cada región del Perú</p>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Tabla de Paquetes Turísticos -->
+            <section class="packages-section">
+                <h2>Paquetes y Precios</h2>
+                <p class="section-intro">Consulta nuestros paquetes de aventura con todo incluido</p>
+                
+                <div class="table-container">
+                    <table class="packages-table">
+                        <thead>
+                            <tr>
+                                <th>Destino</th>
+                                <th>Actividad Principal</th>
+                                <th>Duración</th>
+                                <th>Dificultad</th>
+                                <th>Precio (USD)</th>
+                                <th>Disponibilidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td data-label="Destino">
+                                    <strong>Cusco - Machu Picchu</strong>
+                                </td>
+                                <td data-label="Actividad">Camino Inca Clásico</td>
+                                <td data-label="Duración">4 días / 3 noches</td>
+                                <td data-label="Dificultad">
+                                    <span class="badge difficulty-high">Alta</span>
+                                </td>
+                                <td data-label="Precio" class="price">$650</td>
+                                <td data-label="Disponibilidad">
+                                    <span class="status available">Disponible</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Destino">
+                                    <strong>Huaraz - Cordillera Blanca</strong>
+                                </td>
+                                <td data-label="Actividad">Trek Santa Cruz</td>
+                                <td data-label="Duración">4 días / 3 noches</td>
+                                <td data-label="Dificultad">
+                                    <span class="badge difficulty-medium">Media</span>
+                                </td>
+                                <td data-label="Precio" class="price">$420</td>
+                                <td data-label="Disponibilidad">
+                                    <span class="status available">Disponible</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Destino">
+                                    <strong>Máncora</strong>
+                                </td>
+                                <td data-label="Actividad">Clases de Surf</td>
+                                <td data-label="Duración">3 días / 2 noches</td>
+                                <td data-label="Dificultad">
+                                    <span class="badge difficulty-low">Baja</span>
+                                </td>
+                                <td data-label="Precio" class="price">$280</td>
+                                <td data-label="Disponibilidad">
+                                    <span class="status available">Disponible</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Destino">
+                                    <strong>Arequipa - Colca</strong>
+                                </td>
+                                <td data-label="Actividad">Cañón del Colca + Rafting</td>
+                                <td data-label="Duración">3 días / 2 noches</td>
+                                <td data-label="Dificultad">
+                                    <span class="badge difficulty-medium">Media</span>
+                                </td>
+                                <td data-label="Precio" class="price">$380</td>
+                                <td data-label="Disponibilidad">
+                                    <span class="status limited">Limitado</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Destino">
+                                    <strong>Iquitos - Amazonía</strong>
+                                </td>
+                                <td data-label="Actividad">Expedición Selva</td>
+                                <td data-label="Duración">5 días / 4 noches</td>
+                                <td data-label="Dificultad">
+                                    <span class="badge difficulty-medium">Media</span>
+                                </td>
+                                <td data-label="Precio" class="price">$720</td>
+                                <td data-label="Disponibilidad">
+                                    <span class="status available">Disponible</span>
+                                </td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td data-label="Destino">
+                                    <strong>Paracas - Huacachina</strong>
+                                </td>
+                                <td data-label="Actividad">Sandboard + Islas Ballestas</td>
+                                <td data-label="Duración">2 días / 1 noche</td>
+                                <td data-label="Dificultad">
+                                    <span class="badge difficulty-low">Baja</span>
+                                </td>
+                                <td data-label="Precio" class="price">$210</td>
+                                <td data-label="Disponibilidad">
+                                    <span class="status available">Disponible</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="6" class="table-footer">
+                                    <strong>Nota:</strong> Todos los precios incluyen: guía, transporte, alimentación y equipo. 
+                                    No incluyen: pasaje aéreo, seguro de viaje y gastos personales.
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="table-legend">
+                    <h4>Leyenda de Dificultad:</h4>
+                    <ul>
+                        <li><span class="badge difficulty-low">Baja</span> - Apto para principiantes, sin experiencia previa</li>
+                        <li><span class="badge difficulty-medium">Media</span> - Requiere condición física moderada</li>
+                        <li><span class="badge difficulty-high">Alta</span> - Requiere buena condición física y experiencia</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Galería de Destinos con efectos CSS -->
+            <section class="gallery-section" id="trekking">
+                <h2>Galería de Aventuras</h2>
+                
+                <div class="gallery-grid">
+                    <figure class="gallery-item grayscale-effect">
+                        <img src="img/7. LAGUNA PARÓN.jpg" 
+                             alt="Montaña nevada de la Cordillera Blanca con laguna turquesa">
+                        <figcaption>
+                            <h4>Cordillera Blanca</h4>
+                            <p>Lagunas glaciares de color turquesa</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item grayscale-effect" id="surf">
+                        <img src="img/8. SURF EN LA COSTA PERUANA.jpg" 
+                             alt="Surfista en acción cabalgando una ola grande">
+                        <figcaption>
+                            <h4>Surf en Chicama</h4>
+                            <p>La ola izquierda más larga del mundo</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item grayscale-effect">
+                        <img src="img/9. ATARDECER ANDINO.jpg" 
+                             alt="Atardecer dorado en montañas andinas">
+                        <figcaption>
+                            <h4>Atardeceres Andinos</h4>
+                            <p>Paisajes de ensueño en los Andes</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item grayscale-effect" id="rafting">
+                        <img src="img/10. RAFTING RIO URUBAMBA.jpg" 
+                             alt="Río con rápidos increíbles">
+                        <figcaption>
+                            <h4>Rafting Extremo</h4>
+                            <p>Adrenalina en los ríos andinos</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item grayscale-effect">
+                        <img src="img/11. OLA PERFECTA.jpg" 
+                             alt="Ola perfecta rompiéndose en costa peruana">
+                        <figcaption>
+                            <h4>Olas Perfectas</h4>
+                            <p>Paraíso de los surfistas</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item grayscale-effect" id="selva">
+                        <img src="img/12. FAUNA AMAZÓNICA.jpg" 
+                             alt="Guacamayo multicolor en la selva amazónica">
+                        <figcaption>
+                            <h4>Fauna Amazónica</h4>
+                            <p>Biodiversidad sin igual</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Testimonios -->
+            <section class="testimonials-section">
+                <h2>Lo Que Dicen Nuestros Aventureros</h2>
+                
+                <div class="testimonials-grid">
+                    <article class="testimonial-card slide-in-left">
+                        <div class="testimonial-content">
+                            <p>"La experiencia del Camino Inca fue increíble. Los guías súper profesionales y la organización perfecta. ¡Totalmente recomendado!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Shakira</strong>
+                            <span>España - Camino Inca 2024</span>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card slide-in-right">
+                        <div class="testimonial-content">
+                            <p>"El trek en Huaraz superó todas mis expectativas. Las vistas de las montañas nevadas son simplemente espectaculares."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Donald Trump</strong>
+                            <span>USA - Santa Cruz Trek 2023</span>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card slide-in-left">
+                        <div class="testimonial-content">
+                            <p>"Aprendí a surfear en Máncora con los mejores instructores. Las olas son perfectas para principiantes. ¡Volveré pronto!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Neymar</strong>
+                            <span>Brasil - Surf Máncora 2024</span>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>¿Listo para tu próxima aventura?</h2>
+                    <p>Contáctanos y diseñaremos el viaje perfecto para ti</p>
+                    <a href="contacto.html" class="btn-cta">Reservar Ahora</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Somos una agencia especializada en turismo de aventura en Perú, con más de 15 años de experiencia.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <p>info@aventuraperu.com</p>
+                    <p>+51 999 999 999</p>
+                    <p>Huancavelica, Perú</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aventura Perú. Todos los derechos reservados.</p>
+                <p>PA 2 - Martin Abelardo Matamoros Pineda</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
