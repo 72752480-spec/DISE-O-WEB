@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos para planificar tu próxima aventura en Perú. Formulario de contacto y cotización">
+    <meta name="keywords" content="contacto, cotización, reservas, tours Perú">
+    <meta name="author" content="Aventura Perú">
+    <meta name="robots" content="index, follow">
+    
+    <title>Contacto - Aventura Perú | Reserva tu Aventura</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E⛰️%3C/text%3E%3C/svg%3E">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <path d="M 20 80 L 50 20 L 80 80 Z" fill="#d91023" class="mountain-main"/>
+                    <path d="M 50 80 L 70 40 L 90 80 Z" fill="#a50d1c" class="mountain-secondary"/>
+                    <path d="M 50 20 L 45 35 L 55 35 Z" fill="white" class="snow"/>
+                    <circle cx="15" cy="25" r="8" fill="#ffd700" class="sun"/>
+                    <line x1="15" y1="15" x2="15" y2="10" stroke="#ffd700" stroke-width="2" class="sun-ray"/>
+                    <line x1="22" y1="18" x2="25" y2="15" stroke="#ffd700" stroke-width="2" class="sun-ray"/>
+                </svg>
+                <h1>Aventura Perú</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner de página -->
+    <section class="page-banner contact-banner">
+        <h2>Contáctanos</h2>
+        <p>Estamos listos para planificar tu próxima aventura</p>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Información de Contacto -->
+            <section class="contact-info-section">
+                <h2>Información de Contacto</h2>
+                
+                <div class="contact-cards">
+                    <article class="contact-card pulse-animation">
+                        <div class="contact-icon">📍</div>
+                        <h3>Ubicación</h3>
+                        <p>Jr. Pachacútec N° 117</p>
+                        <p>Yananaco, Huancavelica</p>
+                        <p>Perú</p>
+                    </article>
+
+                    <article class="contact-card pulse-animation">
+                        <div class="contact-icon">📞</div>
+                        <h3>Teléfono</h3>
+                        <p><strong>Celular:</strong> +51 999 999 999</p>
+                        <p><strong>Oficina:</strong> +51 (01) 999-9999</p>
+                        <p><strong>WhatsApp:</strong> +51 999 999 999</p>
+                    </article>
+
+                    <article class="contact-card pulse-animation">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p><strong>Info:</strong> info@aventuraperu.com</p>
+                        <p><strong>Ventas:</strong> ventas@aventuraperu.com</p>
+                        <p><strong>Soporte:</strong> soporte@aventuraperu.com</p>
+                    </article>
+
+                    <article class="contact-card pulse-animation">
+                        <div class="contact-icon">⏰</div>
+                        <h3>Horario</h3>
+                        <p><strong>Lun - Vie:</strong> 9:00 AM - 7:00 PM</p>
+                        <p><strong>Sábados:</strong> 9:00 AM - 2:00 PM</p>
+                        <p><strong>Domingos:</strong> Cerrado</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Formulario de Contacto -->
+            <section class="form-section">
+                <h2>Solicita tu Cotización</h2>
+                <p class="form-intro">Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas</p>
+                
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-grid">
+                        
+                        <!-- Información Personal -->
+                        <fieldset class="form-group">
+                            <legend>Información Personal</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="nombre">
+                                        Nombre Completo <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="nombre" 
+                                        name="nombre" 
+                                        placeholder="Ej: Juan Pérez García"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="nombre-help">
+                                    <small id="nombre-help">Ingresa tu nombre y apellidos</small>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="email">
+                                        Correo Electrónico <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        placeholder="ejemplo@correo.com"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="email-help">
+                                    <small id="email-help">Usaremos este email para contactarte</small>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="telefono">
+                                        Teléfono / WhatsApp <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        id="telefono" 
+                                        name="telefono" 
+                                        placeholder="+51 999 888 777"
+                                        required
+                                        aria-required="true"
+                                        pattern="[+]?[0-9\s\-()]+"
+                                        aria-describedby="telefono-help">
+                                    <small id="telefono-help">Incluye código de país</small>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="pais">
+                                        País de Origen <span class="required">*</span>
+                                    </label>
+                                    <select 
+                                        id="pais" 
+                                        name="pais" 
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="pais-help">
+                                        <option value="">Selecciona tu país</option>
+                                        <option value="PE">Perú</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="BR">Brasil</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="ES">España</option>
+                                        <option value="MX">México</option>
+                                        <option value="US">Estados Unidos</option>
+                                        <option value="OT">Otro</option>
+                                    </select>
+                                    <small id="pais-help">Para personalizar tu experiencia</small>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Detalles del Viaje -->
+                        <fieldset class="form-group">
+                            <legend>Detalles del Viaje</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="destino">
+                                        Destino de Interés <span class="required">*</span>
+                                    </label>
+                                    <select 
+                                        id="destino" 
+                                        name="destino" 
+                                        required
+                                        aria-required="true">
+                                        <option value="">Selecciona un destino</option>
+                                        <option value="cusco">Cusco - Machu Picchu</option>
+                                        <option value="huaraz">Huaraz - Cordillera Blanca</option>
+                                        <option value="mancora">Máncora - Surf</option>
+                                        <option value="arequipa">Arequipa - Colca</option>
+                                        <option value="iquitos">Iquitos - Amazonía</option>
+                                        <option value="paracas">Paracas - Huacachina</option>
+                                        <option value="varios">Varios destinos</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="actividad">
+                                        Actividad Principal
+                                    </label>
+                                    <select 
+                                        id="actividad" 
+                                        name="actividad"
+                                        aria-describedby="actividad-help">
+                                        <option value="">Selecciona una actividad</option>
+                                        <option value="trekking">Trekking</option>
+                                        <option value="surf">Surf</option>
+                                        <option value="rafting">Rafting</option>
+                                        <option value="montanismo">Montañismo</option>
+                                        <option value="selva">Expedición Selva</option>
+                                        <option value="sandboard">Sandboard</option>
+                                        <option value="combinado">Actividades combinadas</option>
+                                    </select>
+                                    <small id="actividad-help">Opcional</small>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="fecha">
+                                        Fecha Aproximada de Viaje <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="date" 
+                                        id="fecha" 
+                                        name="fecha" 
+                                        required
+                                        aria-required="true"
+                                        min="2024-12-01">
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="personas">
+                                        Número de Personas <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="number" 
+                                        id="personas" 
+                                        name="personas" 
+                                        placeholder="Ej: 2"
+                                        min="1" 
+                                        max="20"
+                                        required
+                                        aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="duracion">
+                                    Duración Deseada
+                                </label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="duracion" value="2-3" id="duracion-corta">
+                                        <span>2-3 días</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="duracion" value="4-5" id="duracion-media" checked>
+                                        <span>4-5 días</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="duracion" value="6-7" id="duracion-larga">
+                                        <span>6-7 días</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="duracion" value="8+" id="duracion-extendida">
+                                        <span>8+ días</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Preferencias Adicionales -->
+                        <fieldset class="form-group">
+                            <legend>Preferencias y Requisitos</legend>
+                            
+                            <div class="form-field">
+                                <label for="nivel">
+                                    Nivel de Experiencia
+                                </label>
+                                <select id="nivel" name="nivel">
+                                    <option value="principiante">Principiante</option>
+                                    <option value="intermedio">Intermedio</option>
+                                    <option value="avanzado">Avanzado</option>
+                                    <option value="experto">Experto</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label>Servicios Adicionales</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios[]" value="transporte">
+                                        <span>Transporte desde aeropuerto</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios[]" value="hotel">
+                                        <span>Hotel antes/después del tour</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios[]" value="seguro">
+                                        <span>Seguro de viaje</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios[]" value="equipo">
+                                        <span>Alquiler de equipo especializado</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="mensaje">
+                                    Mensaje o Consultas Adicionales
+                                </label>
+                                <textarea 
+                                    id="mensaje" 
+                                    name="mensaje" 
+                                    rows="6"
+                                    placeholder="Cuéntanos más sobre lo que buscas, dudas, requisitos especiales, etc."
+                                    aria-describedby="mensaje-help"></textarea>
+                                <small id="mensaje-help">Máximo 500 caracteres</small>
+                            </div>
+                        </fieldset>
+
+                        <!-- Newsletter -->
+                        <fieldset class="form-group">
+                            <div class="form-field">
+                                <label class="checkbox-label newsletter-checkbox">
+                                    <input type="checkbox" name="newsletter" value="si" checked>
+                                    <span>Deseo recibir ofertas y promociones especiales por email</span>
+                                </label>
+                            </div>
+
+                            <div class="form-field">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terminos" value="acepto" required aria-required="true">
+                                    <span>Acepto los <a href="#" target="_blank">términos y condiciones</a> y la <a href="#" target="_blank">política de privacidad</a> <span class="required">*</span></span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                    </div>
+
+                    <!-- Botones del formulario -->
+                    <div class="form-actions">
+                        <button type="reset" class="btn-secondary">Limpiar Formulario</button>
+                        <button type="submit" class="btn-primary">Enviar Cotización</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- FAQ -->
+            <section class="faq-section">
+                <h2>Preguntas Frecuentes</h2>
+                
+                <div class="faq-grid">
+                    <article class="faq-item">
+                        <h3>¿Cuánto tiempo antes debo reservar?</h3>
+                        <p>Recomendamos reservar con al menos 2-3 meses de anticipación, especialmente para el Camino Inca que requiere permisos limitados.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>¿Qué incluyen los paquetes?</h3>
+                        <p>Todos nuestros paquetes incluyen: guía profesional, transporte, alimentación durante el tour, equipo básico y entradas. No incluyen vuelos ni seguro de viaje.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>¿Qué nivel de condición física necesito?</h3>
+                        <p>Depende del tour. Tenemos opciones desde nivel principiante hasta avanzado. Nuestros asesores te ayudarán a elegir el tour adecuado para ti.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>¿Proporcionan equipo?</h3>
+                        <p>Sí, proporcionamos equipo básico. Para equipo especializado (como sleeping bags de alta montaña) ofrecemos alquiler opcional.</p>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Somos una agencia especializada en turismo de aventura en Perú, con más de 15 años de experiencia.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <p>info@aventuraperu.com</p>
+                    <p>+51 999 999 999</p>
+                    <p>Huancavelica, Perú</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aventura Perú. Todos los derechos reservados.</p>
+                <p>PA 2 - Martin Abelardo Matamoros Pineda</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
